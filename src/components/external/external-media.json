@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_external_external_medias",
+  "info": {
+    "displayName": "external-media",
+    "icon": "external-link-alt"
+  },
+  "options": {},
+  "attributes": {
+    "source": {
+      "type": "enumeration",
+      "enum": [
+        "youtube"
+      ],
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

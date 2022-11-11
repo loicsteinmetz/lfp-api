@@ -53,6 +53,11 @@
       "relation": "manyToMany",
       "target": "api::category.category",
       "inversedBy": "articles"
+    },
+    "external_media": {
+      "type": "component",
+      "repeatable": true,
+      "component": "external.external-media"
     }
   }
 }
