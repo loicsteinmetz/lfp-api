@@ -4,7 +4,8 @@
   "info": {
     "singularName": "type",
     "pluralName": "types",
-    "displayName": "Type"
+    "displayName": "Type",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -20,6 +21,11 @@
       "relation": "manyToMany",
       "target": "api::article.article",
       "mappedBy": "types"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
     }
   }
 }
