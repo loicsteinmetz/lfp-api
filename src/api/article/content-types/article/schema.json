@@ -58,6 +58,12 @@
       "type": "component",
       "repeatable": true,
       "component": "external.external-media"
+    },
+    "footer": {
+      "type": "richtext"
+    },
+    "info": {
+      "type": "richtext"
     }
   }
 }
