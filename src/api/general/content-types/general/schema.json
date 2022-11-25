@@ -46,14 +46,18 @@
       "type": "string"
     },
     "logo_lg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "maintenance": {
+      "type": "boolean"
     }
   }
 }
