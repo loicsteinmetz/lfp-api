@@ -64,6 +64,11 @@
     },
     "info": {
       "type": "richtext"
+    },
+    "keywords": {
+      "type": "component",
+      "repeatable": true,
+      "component": "seo.keywords"
     }
   }
 }

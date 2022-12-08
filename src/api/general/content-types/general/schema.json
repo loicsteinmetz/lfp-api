@@ -58,6 +58,17 @@
     },
     "maintenance": {
       "type": "boolean"
+    },
+    "description": {
+      "type": "text"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_seo_keywords",
+  "info": {
+    "displayName": "keywords",
+    "icon": "tag"
+  },
+  "options": {},
+  "attributes": {
+    "keyword": {
+      "type": "string"
+    }
+  }
+}
