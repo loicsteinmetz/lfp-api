@@ -69,6 +69,12 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
     }
   }
 }
