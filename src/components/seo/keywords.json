@@ -2,12 +2,14 @@
   "collectionName": "components_seo_keywords",
   "info": {
     "displayName": "keywords",
-    "icon": "tag"
+    "icon": "tag",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "keyword": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   }
 }

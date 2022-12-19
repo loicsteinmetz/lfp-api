@@ -18,7 +18,8 @@
     },
     "slug": {
       "type": "uid",
-      "targetField": "displayName"
+      "targetField": "displayName",
+      "required": true
     },
     "picture": {
       "type": "media",

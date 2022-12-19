@@ -18,7 +18,8 @@
     },
     "slug": {
       "type": "uid",
-      "targetField": "title"
+      "targetField": "title",
+      "required": true
     },
     "extract": {
       "type": "text",
@@ -34,7 +35,7 @@
     },
     "body": {
       "type": "richtext",
-      "required": true
+      "required": false
     },
     "authors": {
       "type": "relation",
