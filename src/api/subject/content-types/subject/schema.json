@@ -4,7 +4,8 @@
   "info": {
     "singularName": "subject",
     "pluralName": "subjects",
-    "displayName": "Subject"
+    "displayName": "Subject",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -20,6 +21,10 @@
       "relation": "manyToMany",
       "target": "api::article.article",
       "mappedBy": "subjects"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
     }
   }
 }
