@@ -76,6 +76,9 @@
       "relation": "manyToMany",
       "target": "api::subject.subject",
       "inversedBy": "articles"
+    },
+    "public": {
+      "type": "boolean"
     }
   }
 }
