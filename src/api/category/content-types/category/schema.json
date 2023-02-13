@@ -26,6 +26,10 @@
       "type": "uid",
       "targetField": "name",
       "required": true
+    },
+    "rank": {
+      "type": "integer",
+      "required": true
     }
   }
 }
