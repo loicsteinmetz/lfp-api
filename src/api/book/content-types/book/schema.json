@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "books",
+  "info": {
+    "singularName": "book",
+    "pluralName": "books",
+    "displayName": "Livres",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "owner": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::owner.owner",
+      "inversedBy": "books"
+    },
+    "loans": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::loan.loan",
+      "mappedBy": "book"
+    },
+    "abstract": {
+      "type": "text",
+      "required": true
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "authors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::book-author.book-author",
+      "inversedBy": "books"
+    },
+    "themes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::book-theme.book-theme",
+      "mappedBy": "books"
+    },
+    "editor": {
+      "type": "string"
+    },
+    "year": {
+      "type": "integer"
+    }
+  }
+}

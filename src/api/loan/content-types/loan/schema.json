@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "loans",
+  "info": {
+    "singularName": "loan",
+    "pluralName": "loans",
+    "displayName": "Emprunts",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "book": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::book.book",
+      "inversedBy": "loans"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "demand",
+        "ongoing",
+        "completed"
+      ],
+      "required": true,
+      "default": "demand"
+    },
+    "loan_date": {
+      "type": "date"
+    },
+    "estimated_return_date": {
+      "type": "date"
+    },
+    "contact_name": {
+      "type": "string",
+      "required": true
+    },
+    "contact_tel": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

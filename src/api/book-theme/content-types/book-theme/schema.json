@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "book_themes",
+  "info": {
+    "singularName": "book-theme",
+    "pluralName": "book-themes",
+    "displayName": "Catégories livres",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "books": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::book.book",
+      "inversedBy": "themes"
+    }
+  }
+}

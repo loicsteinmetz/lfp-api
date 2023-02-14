@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "book_authors",
+  "info": {
+    "singularName": "book-author",
+    "pluralName": "book-authors",
+    "displayName": "Auteurs livre"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "books": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::book.book",
+      "mappedBy": "authors"
+    }
+  }
+}
