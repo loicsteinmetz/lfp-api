@@ -41,23 +41,11 @@
     "bio": {
       "type": "text"
     },
-    "user": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "admin::user",
-      "private": true
-    },
     "articles": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::article.article",
       "inversedBy": "authors"
-    },
-    "books": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::book.book",
-      "mappedBy": "authors"
     }
   }
 }

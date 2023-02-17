@@ -45,12 +45,6 @@
         "images"
       ]
     },
-    "authors": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::book-author.book-author",
-      "inversedBy": "books"
-    },
     "themes": {
       "type": "relation",
       "relation": "manyToMany",
@@ -62,6 +56,12 @@
     },
     "year": {
       "type": "integer"
+    },
+    "authors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::book-author.book-author",
+      "inversedBy": "books"
     }
   }
 }
