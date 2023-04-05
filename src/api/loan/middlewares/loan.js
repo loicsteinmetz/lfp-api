@@ -31,7 +31,7 @@ module.exports = (config, { strapi }) => {
             to: process.env.BOOKS_NOTIFICATIONS_MAILS,
             subject: "👉 Nouvelle demande",
             text: `Nouvelle demande de livre par ${ctx.request.body.data.contact_name}.`,
-            html: `<p>Nouvelle demande de livre par <b>${ctx.request.body.data.contact_name}</b>.</p>`,
+            html: `<p>Nouvelle demande de livre par <b>${ctx.request.body.data.contact_name}</b>.</p><p><a href="${process.env.NOTIFICATION_MAIL_LINK}">Voir la demande</a></p>`,
           });
           strapi.log.info(JSON.stringify(mail));
         } catch (e) {
