@@ -78,14 +78,20 @@
       "type": "string"
     },
     "mobile_logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "books_how_to": {
+      "type": "text",
+      "default": "Lorem ipsum",
+      "required": true
     }
   }
 }
