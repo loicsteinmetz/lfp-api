@@ -23,7 +23,7 @@
     },
     "extract": {
       "type": "text",
-      "required": false
+      "required": true
     },
     "cover": {
       "type": "media",
@@ -35,7 +35,7 @@
     },
     "body": {
       "type": "richtext",
-      "required": false
+      "required": true
     },
     "authors": {
       "type": "relation",

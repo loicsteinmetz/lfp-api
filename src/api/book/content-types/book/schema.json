@@ -62,6 +62,16 @@
       "relation": "manyToMany",
       "target": "api::book-author.book-author",
       "inversedBy": "books"
+    },
+    "priority": {
+      "type": "enumeration",
+      "enum": [
+        "A",
+        "B",
+        "C"
+      ],
+      "required": true,
+      "default": "A"
     }
   }
 }
